@@ -5,7 +5,14 @@ from overworld import Overworld
 from ui import UI
 from game_over import GameOver
 
+
+#Title and Icon
+pygame.display.set_caption("Escape From Pirate Cove")
+icon = pygame.image.load('graphics/overworld/hat.png')
+pygame.display.set_icon(icon)
+
 class Game:
+
     def __init__(self, screen):
         self.max_level = 0
         self.screen = screen
